@@ -1,0 +1,34 @@
+'''
+The first part of this excercise will print every number less than 10 in listA using a for loop and a while loop
+'''
+
+#Excercise using a for loop
+listA = [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 7]
+
+for i in listA :
+    #print (i)
+    if i < 10 :
+        print (i)
+
+print("-----------------")
+
+#Excercise using a while loop
+i = 0
+while i < len(listA) :
+    if listA[i] < 10:
+        print (listA[i])
+    i = i + 1
+
+print("-------------------")
+
+'''
+The next part of this excerise will add the numbers that are less than 10 in numlist and put them in a new list called newlist
+and then print newlist
+'''
+numlist = [1, 2, 3, 4, 10, 20, 30, 40, 50]
+newlist = []
+for num in numlist :
+    if num <10 :
+        newlist.append(num)
+
+print (newlist)
