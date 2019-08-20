@@ -1,0 +1,35 @@
+'''
+The first part of the excercise asks the user for a number and then returns a statement based on if its even or odd
+'''
+varNumber = int(input("Enter a number: "))
+
+if varNumber%2 == 0 :
+    print("You have entered the number ", varNumber, " which is an even number")
+else :
+    print("You have entered the number ", varNumber, " which is an odd number")
+    
+
+'''
+The second part of this excercise returns an additional statement based on if varNumber is divisible by 4
+and another statement based on if varNumber is divisible by varOtherNumber
+'''
+varNumber = int(input("Enter a number: "))
+varOtherNumber = int(input("Enter another number: "))
+
+if varNumber%2 == 0 :
+    print("You have entered the number ", varNumber, " which is an even number")
+    
+    if varNumber%4 == 0 :
+        print("This number is divisible by 4")
+    else :
+        print("This number is not divisible by 4")
+        
+else :
+    print("You have entered the number ", varNumber, " which is an odd number")
+
+    
+if varNumber % varOtherNumber  == 0:
+    print (varNumber, "is divided evenly by ", varOtherNumber)
+else :
+    print (varNumber, "is not divided evenly by ", varOtherNumber)
+    
